@@ -21,5 +21,13 @@ public class BCItemTagsProvider extends ItemTagsProvider {
         tag(Tags.BSItemTags.BIG_SWORDS).add(
                 BCItems.TITANIUM_BIG_SWORD.get()
         );
+
+        tag(Tags.BSItemTags.GLAIVES).add(
+                BCItems.TITANIUM_GLAIVE.get()
+        );
+
+        tag(Tags.BSItemTags.SCYTHES).add(
+                BCItems.TITANIUM_SCYTHE.get()
+        );
     }
 }

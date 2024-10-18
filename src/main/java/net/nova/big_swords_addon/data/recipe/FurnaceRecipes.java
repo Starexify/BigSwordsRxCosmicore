@@ -31,5 +31,19 @@ public class FurnaceRecipes extends BCRecipeProvider {
                 )
                 .unlockedBy("has_" + getItemName(BCItems.TITANIUM_BIG_SWORD), has(BCItems.TITANIUM_BIG_SWORD))
                 .save(recipeOutput, path + getSmeltingRecipeName(BCItems.TITANIUM_BIG_SWORD));
+
+        // Glaives & Scythes
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(
+                                BCItems.TITANIUM_GLAIVE,
+                                BCItems.TITANIUM_SCYTHE
+                        ),
+                        RecipeCategory.MISC,
+                        CItems.TITANIUM_NUGGET,
+                        0.1F,
+                        200
+                )
+                .unlockedBy("has_" + getItemName(BCItems.TITANIUM_GLAIVE), has(BCItems.TITANIUM_GLAIVE))
+                .unlockedBy("has_" + getItemName(BCItems.TITANIUM_SCYTHE), has(BCItems.TITANIUM_SCYTHE))
+                .save(recipeOutput, path + getSmeltingRecipeName(CItems.TITANIUM_NUGGET));
     }
 }

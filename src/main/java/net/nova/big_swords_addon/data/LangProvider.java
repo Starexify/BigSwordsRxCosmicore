@@ -18,5 +18,8 @@ public class LangProvider extends LanguageProvider {
 
         // Glaives
         addItem(BCItems.TITANIUM_GLAIVE, "Titanium Glaive");
+
+        // Scythes
+        addItem(BCItems.TITANIUM_SCYTHE, "Titanium Scythe");
     }
 }

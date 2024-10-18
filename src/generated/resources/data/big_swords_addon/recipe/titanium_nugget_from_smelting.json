@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "big_swords_addon:titanium_glaive"
+    },
+    {
+      "item": "big_swords_addon:titanium_scythe"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cosmicore:titanium_nugget"
+  }
+}

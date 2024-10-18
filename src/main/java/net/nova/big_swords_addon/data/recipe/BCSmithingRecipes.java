@@ -21,5 +21,7 @@ public class BCSmithingRecipes extends CRecipeProvider {
     public void build() {
         // Titanium Stuff
         titaniumSmithing(recipeOutput, BSItems.IRON_BIG_SWORD.asItem(), RecipeCategory.TOOLS, BCItems.TITANIUM_BIG_SWORD.get());
+        titaniumSmithing(recipeOutput, BSItems.IRON_GLAIVE.asItem(), RecipeCategory.TOOLS, BCItems.TITANIUM_GLAIVE.get());
+        titaniumSmithing(recipeOutput, BSItems.IRON_SCYTHE.asItem(), RecipeCategory.TOOLS, BCItems.TITANIUM_SCYTHE.get());
     }
 }

@@ -24,6 +24,7 @@ public class BigSwordsRAddonClient {
         if (event.getTab() == bigSwordsTab) {
             putAfter(BSItems.PATCHWORK_BIG_SWORD.get(), BCItems.TITANIUM_BIG_SWORD, event);
             putAfter(BSItems.LIVINGMETAL_GLAIVE.get(), BCItems.TITANIUM_GLAIVE, event);
+            putAfter(BSItems.SOUL_REAPER.get(), BCItems.TITANIUM_SCYTHE, event);
         }
     }
 

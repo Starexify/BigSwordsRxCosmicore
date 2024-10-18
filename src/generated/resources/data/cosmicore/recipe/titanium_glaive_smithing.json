@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "cosmicore:titanium_ingot"
+  },
+  "base": {
+    "item": "big_swords:iron_glaive"
+  },
+  "result": {
+    "count": 1,
+    "id": "big_swords_addon:titanium_glaive"
+  },
+  "template": {
+    "item": "cosmicore:titanium_upgrade_smithing_template"
+  }
+}

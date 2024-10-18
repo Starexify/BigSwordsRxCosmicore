@@ -26,6 +26,9 @@ public class BCItemModelProvider extends ItemModelProvider {
 
         // Glaives
         handheldGlaive(BCItems.TITANIUM_GLAIVE.get());
+
+        // Scythes
+        handheldItem(BCItems.TITANIUM_SCYTHE.get());
     }
 
     private void shieldItem(Item item) {
