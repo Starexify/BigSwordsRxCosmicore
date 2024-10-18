@@ -9,6 +9,8 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.nova.big_swords_addon.BigSwordsRAddon;
 import net.nova.big_swords_addon.data.recipe.BCRecipeProvider;
+import net.nova.big_swords_addon.data.tags.BCBlockTagsProvider;
+import net.nova.big_swords_addon.data.tags.BCItemTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -27,6 +29,10 @@ public class DataGenerators {
             generator.addProvider(true, new LangProvider(output));
             generator.addProvider(true, new BCItemModelProvider(output, existingFileHelper));
             generator.addProvider(true, new BCRecipeProvider(output, lookupProvider));
+
+            BCBlockTagsProvider modBlockTagsProvider = new BCBlockTagsProvider(output, lookupProvider, existingFileHelper);
+            generator.addProvider(true, modBlockTagsProvider);
+            generator.addProvider(true, new BCItemTagsProvider(output, lookupProvider, modBlockTagsProvider, existingFileHelper));
 
         } catch (RuntimeException e) {
             BigSwordsRAddon.logger.error("Big Swords R x Cosmicore Add-On failed to gather data", e);

@@ -2,23 +2,30 @@ package net.nova.big_swords_addon.data;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.nova.big_swords.BigSwordsR;
 import net.nova.big_swords.client.renderer.item.BSItemProperties;
 import net.nova.big_swords.data.BSItemModelProvider;
 import net.nova.big_swords_addon.init.BCItems;
 
 import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
 
-public class BCItemModelProvider extends BSItemModelProvider {
+public class BCItemModelProvider extends ItemModelProvider {
     public BCItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
-        super(output, existingFileHelper);
+        super(output, MODID, existingFileHelper);
     }
 
     @Override
     protected void registerModels() {
         // Big Swords
         handheldItem(BCItems.TITANIUM_BIG_SWORD.get());
+
+        // Glaives
+        handheldGlaive(BCItems.TITANIUM_GLAIVE.get());
     }
 
     private void shieldItem(Item item) {
@@ -35,8 +42,13 @@ public class BCItemModelProvider extends BSItemModelProvider {
 
     private void handheldGlaive(Item item) {
         getBuilder(getItemName(item))
-                .parent(getExistingFile(modLoc("item/handheld_glaive")))
+                .parent(new ModelFile.UncheckedModelFile(bsrLoc("item/handheld_glaive")))
                 .texture("layer0", "item/" + getItemName(item));
+    }
+
+    public ResourceLocation bsrLoc(String name) {
+        return ResourceLocation.fromNamespaceAndPath(BigSwordsR.MODID, name);
+
     }
 
     private String getItemName(Item item) {

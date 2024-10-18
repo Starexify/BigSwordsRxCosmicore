@@ -15,5 +15,8 @@ public class LangProvider extends LanguageProvider {
     protected void addTranslations() {
         // Big Swords
         addItem(BCItems.TITANIUM_BIG_SWORD, "Titanium Big Sword");
+
+        // Glaives
+        addItem(BCItems.TITANIUM_GLAIVE, "Titanium Glaive");
     }
 }
