@@ -23,9 +23,11 @@ public class DataGenerators {
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
             CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
+            generator.addProvider(true, new LangProvider(output));
+            generator.addProvider(true, new BCItemModelProvider(output, existingFileHelper));
 
         } catch (RuntimeException e) {
-            BigSwordsRAddon.logger.error("Big Swords R x Cosmicore failed to gather data", e);
+            BigSwordsRAddon.logger.error("Big Swords R x Cosmicore Add-On failed to gather data", e);
         }
     }
 }
