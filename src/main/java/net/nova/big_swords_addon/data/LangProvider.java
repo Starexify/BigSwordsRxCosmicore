@@ -26,8 +26,8 @@ public class LangProvider extends LanguageProvider {
         addItem(BCItems.TITANIUM_SCYTHE, "Titanium Scythe");
 
         // Shields
-        addShield(BCItems.TITANIUM_SHIELD, "Titanium Shield", "Special Perk: ?", "Weakness: ?");
-        addShield(BCItems.GILDED_TITANIUM_SHIELD, "Gilded Titanium Shield", "Special Perk: ?", "Weakness: ?");
+        addShield(BCItems.TITANIUM_SHIELD, "Titanium Shield", "Special Perk: Titanic Slam", "Weakness: Heavy");
+        addShield(BCItems.GILDED_TITANIUM_SHIELD, "Gilded Titanium Shield", "Special Perk: Titanic Slam", "Weakness: Heavy");
     }
 
     public void addShield(Supplier<? extends Item> key, String name, String perk, String weakness) {

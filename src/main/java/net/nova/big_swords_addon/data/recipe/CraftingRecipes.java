@@ -19,7 +19,7 @@ public class CraftingRecipes extends BSRecipeProvider {
     }
 
     public void build() {
-        // Big Swords
-
+        // Gilded Shields
+        basicGildedShield(recipeOutput, BCItems.TITANIUM_SHIELD, BCItems.GILDED_TITANIUM_SHIELD);
     }
 }

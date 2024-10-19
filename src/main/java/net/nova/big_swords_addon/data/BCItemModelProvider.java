@@ -29,15 +29,19 @@ public class BCItemModelProvider extends ItemModelProvider {
 
         // Scythes
         handheldItem(BCItems.TITANIUM_SCYTHE.get());
+
+        // Shields
+        shieldItem(BCItems.TITANIUM_SHIELD.get());
+        shieldItem(BCItems.GILDED_TITANIUM_SHIELD.get());
     }
 
     private void shieldItem(Item item) {
         getBuilder(getItemName(item) + "_blocking")
-                .parent(getExistingFile(modLoc("item/template_shield_blocking")))
+                .parent(new ModelFile.UncheckedModelFile(bsrLoc("item/template_shield_blocking")))
                 .texture("layer0", "item/" + getItemName(item));
 
         getBuilder(getItemName(item))
-                .parent(getExistingFile(modLoc("item/template_shield")))
+                .parent(new ModelFile.UncheckedModelFile(bsrLoc("item/template_shield")))
                 .texture("layer0", "item/" + getItemName(item))
                 .override().predicate(BSItemProperties.blockingPredicate, 1)
                 .model(getExistingFile(modLoc("item/" + getItemName(item) + "_blocking")));
