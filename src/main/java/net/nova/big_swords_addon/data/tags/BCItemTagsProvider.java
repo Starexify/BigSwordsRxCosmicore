@@ -29,5 +29,9 @@ public class BCItemTagsProvider extends ItemTagsProvider {
         tag(Tags.BSItemTags.SCYTHES).add(
                 BCItems.TITANIUM_SCYTHE.get()
         );
+
+        tag(Tags.BSItemTags.SHIELDS).add(
+                BCItems.TITANIUM_SHIELD.get(), BCItems.GILDED_TITANIUM_SHIELD.get()
+        );
     }
 }

@@ -6,6 +6,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nova.big_swords.item.BigSwordItem;
 import net.nova.big_swords.item.GlaiveItem;
 import net.nova.big_swords.item.ScytheItem;
+import net.nova.big_swords.item.TieredShield;
 import net.nova.cosmicore.init.CToolTiers;
 
 import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
@@ -21,4 +22,8 @@ public class BCItems {
 
     // Scythes
     public static DeferredItem<Item> TITANIUM_SCYTHE = ITEMS.register("titanium_scythe", () -> new ScytheItem(CToolTiers.TITANIUM, new Item.Properties().attributes(ScytheItem.createAttributes(CToolTiers.TITANIUM, 1, -2.0F)), 3.4F, 4.4F));
+
+    // Shields
+    public static DeferredItem<Item> TITANIUM_SHIELD = ITEMS.register("titanium_shield", () -> new TieredShield(CToolTiers.TITANIUM, new Item.Properties()));
+    public static DeferredItem<Item> GILDED_TITANIUM_SHIELD = ITEMS.register("gilded_titanium_shield", () -> new TieredShield(CToolTiers.TITANIUM, new Item.Properties(), 1, CToolTiers.TITANIUM.getUses() / 2));
 }

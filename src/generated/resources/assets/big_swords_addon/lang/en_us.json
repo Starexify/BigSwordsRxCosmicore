@@ -1,5 +1,11 @@
 {
+  "big_swords_addon:gilded_titanium_shield.perk": "Special Perk: ?",
+  "big_swords_addon:gilded_titanium_shield.weakness": "Weakness: ?",
+  "big_swords_addon:titanium_shield.perk": "Special Perk: ?",
+  "big_swords_addon:titanium_shield.weakness": "Weakness: ?",
+  "item.big_swords_addon.gilded_titanium_shield": "Gilded Titanium Shield",
   "item.big_swords_addon.titanium_big_sword": "Titanium Big Sword",
   "item.big_swords_addon.titanium_glaive": "Titanium Glaive",
-  "item.big_swords_addon.titanium_scythe": "Titanium Scythe"
+  "item.big_swords_addon.titanium_scythe": "Titanium Scythe",
+  "item.big_swords_addon.titanium_shield": "Titanium Shield"
 }
