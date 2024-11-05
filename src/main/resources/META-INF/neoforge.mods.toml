@@ -50,7 +50,6 @@ sources="https://github.com/Starexify/BigSwordsRxCosmicore"
 [[dependencies.${mod_id}]]
     modId="minecraft"
     type="required"
-    # This version range declares a minimum of the current minecraft version up to but not including the next major version
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
@@ -58,14 +57,14 @@ sources="https://github.com/Starexify/BigSwordsRxCosmicore"
 [[dependencies.${mod_id}]]
     modId="big_swords"
     type="required"
-    versionRange="[4.0.0,)"
+    versionRange="${bsr_version_range}"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="cosmicore"
     type="required"
-    versionRange="[1.0.0-beta,)"
+    versionRange="${cosmicore_version_range}"
     ordering="NONE"
     side="BOTH"
 

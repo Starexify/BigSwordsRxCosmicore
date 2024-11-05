@@ -21,7 +21,7 @@ import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
 public class BigSwordsRAddonClient {
     @SubscribeEvent
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
-        CreativeModeTab bigSwordsTab = CreativeTab.BIG_SWORDS_TAB.get();
+        CreativeModeTab bigSwordsTab = CreativeTab.BIG_SWORDS_TAB.value();
 
         if (event.getTab() == bigSwordsTab) {
             putAfter(BSItems.PATCHWORK_BIG_SWORD.get(), BCItems.TITANIUM_BIG_SWORD, event);

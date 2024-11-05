@@ -20,6 +20,7 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven { url = "https://api.modrinth.com/maven/" }
 }
 
 base {
@@ -98,8 +99,8 @@ dependencies {
     // For all intends and purposes: You can treat this dependency as if it is a normal library you would use.
     implementation "net.neoforged:neoforge:${neo_version}"
 
-    implementation files("libs/big_swords-${bsr_version}.jar")
-    implementation files("libs/cosmicore-${cosmicore_version}.jar")
+    implementation "maven.modrinth:big-swords-rr:${bsr_version}"
+    implementation "maven.modrinth:cosmicore:${cosmicore_version}"
 
     // implementation "net.nova.big_swords:big_swords:${bsr_version}"
 
@@ -144,7 +145,9 @@ tasks.withType(ProcessResources).configureEach {
             mod_authors            : mod_authors,
             mod_description        : mod_description,
             bsr_version            : bsr_version,
-            cosmicore_version      : cosmicore_version
+            bsr_version_range      : bsr_version_range,
+            cosmicore_version      : cosmicore_version,
+            cosmicore_version_range: cosmicore_version_range
     ]
     inputs.properties replaceProperties
 
