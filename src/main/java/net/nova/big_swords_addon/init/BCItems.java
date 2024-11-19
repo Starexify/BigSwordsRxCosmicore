@@ -29,6 +29,6 @@ public class BCItems {
     // Shields
     public static DeferredItem<Item> TITANIUM_SHIELD = ITEMS.register("titanium_shield", () -> new TieredShield(CTiers.TITANIUM, new Item.Properties()));
     public static DeferredItem<Item> GILDED_TITANIUM_SHIELD = ITEMS.register("gilded_titanium_shield", () -> new TieredShield(CTiers.TITANIUM, new Item.Properties(), 1, CTiers.TITANIUM.getUses() / 2));
-    public static DeferredItem<Item> LONSDALEITE_SHIELD = ITEMS.register("lonsdaleite_shield", () -> new TieredShield(CTiers.LONSDALEITE, new Item.Properties() , -(CTiers.LONSDALEITE.getUses() / 2)));
+    public static DeferredItem<Item> LONSDALEITE_SHIELD = ITEMS.register("lonsdaleite_shield", () -> new TieredShield(CTiers.LONSDALEITE, new Item.Properties(), 1, -(CTiers.LONSDALEITE.getUses() / 2)));
     public static DeferredItem<Item> GILDED_LONSDALEITE_SHIELD = ITEMS.register("gilded_lonsdaleite_shield", () -> new TieredShield(CTiers.LONSDALEITE, new Item.Properties(), 1, -938));
 }
