@@ -18,16 +18,21 @@ public class LangProvider extends LanguageProvider {
     protected void addTranslations() {
         // Big Swords
         addItem(BCItems.TITANIUM_BIG_SWORD, "Titanium Big Sword");
+        addItem(BCItems.LONSDALEITE_BIG_SWORD, "Lonsdaleite Big Sword");
 
         // Glaives
         addItem(BCItems.TITANIUM_GLAIVE, "Titanium Glaive");
+        addItem(BCItems.LONSDALEITE_GLAIVE, "Lonsdaleite Glaive");
 
         // Scythes
         addItem(BCItems.TITANIUM_SCYTHE, "Titanium Scythe");
+        addItem(BCItems.LONSDALEITE_SCYTHE, "Lonsdaleite Scythe");
 
         // Shields
         addShield(BCItems.TITANIUM_SHIELD, "Titanium Shield", "Special Perk: Titanic Slam", "Weakness: Heavy");
         addShield(BCItems.GILDED_TITANIUM_SHIELD, "Gilded Titanium Shield", "Special Perk: Titanic Slam", "Weakness: Heavy");
+        addShield(BCItems.LONSDALEITE_SHIELD, "Lonsdaleite Shield", "Special Perk: ", "Weakness: ");
+        addShield(BCItems.GILDED_LONSDALEITE_SHIELD, "Gilded Lonsdaleite Shield", "Special Perk: ", "Weakness: ");
     }
 
     public void addShield(Supplier<? extends Item> key, String name, String perk, String weakness) {

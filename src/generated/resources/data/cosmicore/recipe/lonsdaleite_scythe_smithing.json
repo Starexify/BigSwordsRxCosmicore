@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "cosmicore:lonsdaleite"
+  },
+  "base": {
+    "item": "big_swords:diamond_scythe"
+  },
+  "result": {
+    "count": 1,
+    "id": "big_swords_addon:lonsdaleite_scythe"
+  },
+  "template": {
+    "item": "cosmicore:lonsdaleite_upgrade_smithing_template"
+  }
+}

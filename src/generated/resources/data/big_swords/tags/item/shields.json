@@ -1,6 +1,8 @@
 {
   "values": [
     "big_swords_addon:titanium_shield",
-    "big_swords_addon:gilded_titanium_shield"
+    "big_swords_addon:gilded_titanium_shield",
+    "big_swords_addon:lonsdaleite_shield",
+    "big_swords_addon:gilded_lonsdaleite_shield"
   ]
 }

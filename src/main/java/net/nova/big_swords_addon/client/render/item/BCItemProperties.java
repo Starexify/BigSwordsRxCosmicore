@@ -11,5 +11,7 @@ public class BCItemProperties extends BSItemProperties {
     public static void addCustomItemProperties() {
         makeShield(BCItems.TITANIUM_SHIELD.get());
         makeShield(BCItems.GILDED_TITANIUM_SHIELD.get());
+        makeShield(BCItems.LONSDALEITE_SHIELD.get());
+        makeShield(BCItems.GILDED_LONSDALEITE_SHIELD.get());
     }
 }

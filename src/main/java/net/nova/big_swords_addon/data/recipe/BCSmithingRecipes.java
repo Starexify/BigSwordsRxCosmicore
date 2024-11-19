@@ -25,5 +25,12 @@ public class BCSmithingRecipes extends CRecipeProvider {
         titaniumSmithing(recipeOutput, BSItems.IRON_SCYTHE.asItem(), RecipeCategory.TOOLS, BCItems.TITANIUM_SCYTHE.get());
         titaniumSmithing(recipeOutput, BSItems.IRON_SHIELD.asItem(), RecipeCategory.TOOLS, BCItems.TITANIUM_SHIELD.get());
         titaniumSmithing(recipeOutput, BSItems.GILDED_IRON_SHIELD.asItem(), RecipeCategory.TOOLS, BCItems.GILDED_TITANIUM_SHIELD.get());
+
+        // Lonsdaleite Stuff
+        lonsdaleiteSmithing(recipeOutput, BSItems.DIAMOND_BIG_SWORD.asItem(), RecipeCategory.TOOLS, BCItems.LONSDALEITE_BIG_SWORD.get());
+        lonsdaleiteSmithing(recipeOutput, BSItems.DIAMOND_GLAIVE.asItem(), RecipeCategory.TOOLS, BCItems.LONSDALEITE_GLAIVE.get());
+        lonsdaleiteSmithing(recipeOutput, BSItems.DIAMOND_SCYTHE.asItem(), RecipeCategory.TOOLS, BCItems.LONSDALEITE_SCYTHE.get());
+        lonsdaleiteSmithing(recipeOutput, BSItems.DIAMOND_SHIELD.asItem(), RecipeCategory.TOOLS, BCItems.LONSDALEITE_SHIELD.get());
+        lonsdaleiteSmithing(recipeOutput, BSItems.GILDED_DIAMOND_SHIELD.asItem(), RecipeCategory.TOOLS, BCItems.GILDED_LONSDALEITE_SHIELD.get());
     }
 }

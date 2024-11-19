@@ -37,6 +37,13 @@ public class ShieldMechanics {
             if ((isTitaniumShield || isGildedTitaniumShield)) {
 
             }
+
+            // Lonsdaleite Shields
+            boolean isLonsdaleiteShield = shield.is(BCItems.LONSDALEITE_SHIELD);
+            boolean isGildedLonsdaleiteShield = shield.is(BCItems.GILDED_LONSDALEITE_SHIELD);
+            if ((isLonsdaleiteShield || isGildedLonsdaleiteShield)) {
+
+            }
         }
     }
 }

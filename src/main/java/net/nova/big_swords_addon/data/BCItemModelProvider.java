@@ -23,25 +23,30 @@ public class BCItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         // Big Swords
         handheldItem(BCItems.TITANIUM_BIG_SWORD.get());
+        handheldItem(BCItems.LONSDALEITE_BIG_SWORD.get());
 
         // Glaives
         handheldGlaive(BCItems.TITANIUM_GLAIVE.get());
+        handheldGlaive(BCItems.LONSDALEITE_GLAIVE.get());
 
         // Scythes
         handheldItem(BCItems.TITANIUM_SCYTHE.get());
+        handheldItem(BCItems.LONSDALEITE_SCYTHE.get());
 
         // Shields
         shieldItem(BCItems.TITANIUM_SHIELD.get());
         shieldItem(BCItems.GILDED_TITANIUM_SHIELD.get());
+        shieldItem(BCItems.LONSDALEITE_SHIELD.get());
+        shieldItem(BCItems.GILDED_LONSDALEITE_SHIELD.get());
     }
 
     private void shieldItem(Item item) {
         getBuilder(getItemName(item) + "_blocking")
-                .parent(new ModelFile.UncheckedModelFile(bsrLoc("item/template_shield_blocking")))
+                .parent(new ModelFile.UncheckedModelFile(BigSwordsR.rl("item/template_shield_blocking")))
                 .texture("layer0", "item/" + getItemName(item));
 
         getBuilder(getItemName(item))
-                .parent(new ModelFile.UncheckedModelFile(bsrLoc("item/template_shield")))
+                .parent(new ModelFile.UncheckedModelFile(BigSwordsR.rl("item/template_shield")))
                 .texture("layer0", "item/" + getItemName(item))
                 .override().predicate(BSItemProperties.blockingPredicate, 1)
                 .model(getExistingFile(modLoc("item/" + getItemName(item) + "_blocking")));
@@ -49,16 +54,11 @@ public class BCItemModelProvider extends ItemModelProvider {
 
     private void handheldGlaive(Item item) {
         getBuilder(getItemName(item))
-                .parent(new ModelFile.UncheckedModelFile(bsrLoc("item/handheld_glaive")))
+                .parent(new ModelFile.UncheckedModelFile(BigSwordsR.rl("item/handheld_glaive")))
                 .texture("layer0", "item/" + getItemName(item));
     }
 
-    public ResourceLocation bsrLoc(String name) {
-        return ResourceLocation.fromNamespaceAndPath(BigSwordsR.MODID, name);
-
-    }
-
-    private String getItemName(Item item) {
+    public String getItemName(Item item) {
         return BuiltInRegistries.ITEM.getKey(item).toString().replace(MODID + ":", "");
     }
 }

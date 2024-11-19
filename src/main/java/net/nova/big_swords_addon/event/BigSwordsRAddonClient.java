@@ -19,23 +19,28 @@ import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
 
 @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class BigSwordsRAddonClient {
+
     @SubscribeEvent
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
         CreativeModeTab bigSwordsTab = CreativeTab.BIG_SWORDS_TAB.value();
 
         if (event.getTab() == bigSwordsTab) {
             putAfter(BSItems.PATCHWORK_BIG_SWORD.get(), BCItems.TITANIUM_BIG_SWORD, event);
+            putAfter(BCItems.TITANIUM_BIG_SWORD.get(), BCItems.LONSDALEITE_BIG_SWORD, event);
             putAfter(BSItems.LIVINGMETAL_GLAIVE.get(), BCItems.TITANIUM_GLAIVE, event);
+            putAfter(BCItems.TITANIUM_GLAIVE.get(), BCItems.LONSDALEITE_GLAIVE, event);
             putAfter(BSItems.SOUL_REAPER.get(), BCItems.TITANIUM_SCYTHE, event);
+            putAfter(BCItems.TITANIUM_SCYTHE.get(), BCItems.LONSDALEITE_SCYTHE, event);
             putAfter(BSItems.GILDED_PATCHWORK_SHIELD.get(), BCItems.TITANIUM_SHIELD, event);
             putAfter(BCItems.TITANIUM_SHIELD.get(), BCItems.GILDED_TITANIUM_SHIELD, event);
+            putAfter(BCItems.GILDED_TITANIUM_SHIELD.get(), BCItems.LONSDALEITE_SHIELD, event);
+            putAfter(BCItems.LONSDALEITE_SHIELD.get(), BCItems.GILDED_LONSDALEITE_SHIELD, event);
         }
     }
 
-    private static void putAfter(Item item, Supplier<? extends ItemLike> itemAfter, BuildCreativeModeTabContentsEvent event) {
+    public static void putAfter(Item item, Supplier<? extends ItemLike> itemAfter, BuildCreativeModeTabContentsEvent event) {
         event.insertAfter(item.getDefaultInstance(), itemAfter.get().asItem().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
     }
-
 
     @SubscribeEvent
     public static void setupClient(FMLClientSetupEvent event) {

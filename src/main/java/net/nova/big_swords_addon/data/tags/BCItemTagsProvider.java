@@ -19,19 +19,19 @@ public class BCItemTagsProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         tag(Tags.BSItemTags.BIG_SWORDS).add(
-                BCItems.TITANIUM_BIG_SWORD.get()
+                BCItems.TITANIUM_BIG_SWORD.get(), BCItems.LONSDALEITE_BIG_SWORD.get()
         );
 
         tag(Tags.BSItemTags.GLAIVES).add(
-                BCItems.TITANIUM_GLAIVE.get()
+                BCItems.TITANIUM_GLAIVE.get(), BCItems.LONSDALEITE_GLAIVE.get()
         );
 
         tag(Tags.BSItemTags.SCYTHES).add(
-                BCItems.TITANIUM_SCYTHE.get()
+                BCItems.TITANIUM_SCYTHE.get(), BCItems.LONSDALEITE_SCYTHE.get()
         );
 
         tag(Tags.BSItemTags.SHIELDS).add(
-                BCItems.TITANIUM_SHIELD.get(), BCItems.GILDED_TITANIUM_SHIELD.get()
+                BCItems.TITANIUM_SHIELD.get(), BCItems.GILDED_TITANIUM_SHIELD.get(), BCItems.LONSDALEITE_SHIELD.get(), BCItems.GILDED_LONSDALEITE_SHIELD.get()
         );
     }
 }
