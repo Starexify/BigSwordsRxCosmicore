@@ -37,16 +37,9 @@
   </tr>
 </table>
 
-<p align="center">
-    <strong>
-        This mod is a spiritual successor to the Asgard Shields mod series, and this is just a hobby project, therefore content may be different from originals.
-    </strong>
-</p>
-
 ## ℹ️ About
 
-Big Swords R (Remembered or Reboot or Remake, etc.) adds Big Swords in the game, they deal more damage than regular swords but the attack speed is lowered.
-The mod also adds two new types of weapons, Glaives and Scythes. And the long awaited SHIELDS, each with one special perk and weakness.
+Big Swords R x Cosmicore compatibility mod which adds the big swords, glaives, scythes using Cosmicore's materials
 
 
 ## ✨ Features
