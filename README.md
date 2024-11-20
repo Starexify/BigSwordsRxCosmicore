@@ -37,41 +37,19 @@
   </tr>
 </table>
 
+
 ## ℹ️ About
 
-Big Swords R x Cosmicore compatibility mod which adds the big swords, glaives, scythes using Cosmicore's materials
+Big Swords R x Cosmicore Add-On is a compatibility mod which adds the big swords, glaives, scythes using Cosmicore's materials.
 
 
 ## ✨ Features
 
-<table align="center" style="border-collapse: collapse;">
-  <tbody>
-    <tr>
-      <td style="padding: 10px; text-align: left; border: none;"><strong>🌱 Farming</strong></td>
-      <td style="padding: 10px; text-align: left; border: none;">New Biomass Seed which grows on Tilled Creep Blocks, only way to gain Biomass</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; text-align: left; border: none;"><strong>🪨 New Materials</strong></td>
-      <td style="padding: 10px; text-align: left; border: none;"><strong>Livingmetal</strong> and <strong>Biomass</strong> are two new materials.</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; text-align: left; border: none;"><strong>⚔️️ Big Swords</strong></td>
-      <td style="padding: 10px; text-align: left; border: none;">Similar to swords. But <strong>BIGGER</strong>, they deal more damage but have lower attack speed.</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; text-align: left; border: none;"><strong>⚔️️ Glaives</strong></td>
-      <td style="padding: 10px; text-align: left; border: none;">New weapons that deal small damage, but are fast and have more range.</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; text-align: left; border: none;"><strong>⚔️️ Scythes</strong></td>
-      <td style="padding: 10px; text-align: left; border: none;">New weapons that are similar to hoes but <strong>BETTER</strong>, they hit mobs in a short area.</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; text-align: left; border: none;"><strong>🛡️ Shields</strong></td>
-      <td style="padding: 10px; text-align: left; border: none;">New shields that are similar to the minecraft ones but <strong>BETTER</strong>, each having a perk that comes with a weakness.</td>
-    </tr>
-  </tbody>
-</table>
+### **This mod adds:**
+- ⚔️️ **2 New Big Swords**
+- ⚔️️ **2 New Glaives**
+- ⚔️️ **2 New Scythes**
+- 🛡️ **4 New Shields**
 
 
 ## 📜 License

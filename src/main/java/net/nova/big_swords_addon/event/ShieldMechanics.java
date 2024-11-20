@@ -2,12 +2,14 @@ package net.nova.big_swords_addon.event;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -30,10 +32,10 @@ public class ShieldMechanics {
     public static void onShieldBlock(LivingShieldBlockEvent event) {
         if (event.getEntity() instanceof Player player && event.getBlocked()) {
             ItemStack shield = player.getUseItem();
-            Level level = player.level();
             Entity attacker = event.getDamageSource().getEntity();
-            Entity sourceEntity = event.getDamageSource().getDirectEntity();
             DamageSource damageSource = event.getDamageSource();
+            Level level = player.level();
+            Entity sourceEntity = event.getDamageSource().getDirectEntity();
             float blockedDamage = event.getBlockedDamage();
             float shieldDamage = event.shieldDamage();
             double randomChance = Math.random();
@@ -43,7 +45,17 @@ public class ShieldMechanics {
             boolean isLonsdaleiteShield = shield.is(BCItems.LONSDALEITE_SHIELD);
             boolean isGildedLonsdaleiteShield = shield.is(BCItems.GILDED_LONSDALEITE_SHIELD);
             if ((isLonsdaleiteShield || isGildedLonsdaleiteShield)) {
+                if (attacker instanceof LivingEntity && (damageSource.is(DamageTypes.PLAYER_ATTACK) || damageSource.is(DamageTypes.MOB_ATTACK))) {
+                    event.setShieldDamage(0);
 
+                    // Prevent axes from putting the shield on cooldown
+                    if (attacker instanceof LivingEntity living) {
+                        ItemStack weapon = living.getMainHandItem();
+                        if (weapon.getItem() instanceof AxeItem) {
+                            event.setCanceled(true);
+                        }
+                    }
+                }
             }
         }
     }
