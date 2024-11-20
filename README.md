@@ -30,16 +30,6 @@
       </a>
     </td>
     <td align="center" style="border: none; padding: 10px;">
-      <a href="#%EF%B8%8F-planned-updates" style="text-decoration: none; color: #FF9900; font-size: 1.2em; font-weight: bold; transition: color 0.3s ease;">
-         🗓️ Planned Updates
-      </a>
-    </td>
-    <td align="center" style="border: none; padding: 10px;">
-      <a href="#-frequently-asked-questions" style="text-decoration: none; color: #FF0000; font-size: 1.2em; font-weight: bold; transition: color 0.3s ease;">
-         ❓ FAQ
-      </a>
-    </td>
-    <td align="center" style="border: none; padding: 10px;">
       <a href="#-license" style="text-decoration: none; color: #00CC44; font-size: 1.2em; font-weight: bold; transition: color 0.3s ease;">
         📜 License
       </a>
@@ -90,24 +80,6 @@ The mod also adds two new types of weapons, Glaives and Scythes. And the long aw
   </tbody>
 </table>
 
-
-## 🗓️ Planned Updates
-
-In the upcoming updates I plan to add:
-
-- <!-- Livingmetal? -->
-
-
-## ❓ Frequently Asked Questions
-
-**Q:** Will you port the mod to Fabric? \
-**A:** No.
-
-**Q:** Why? \
-**A:** Because I want to bring the good old mods back.
-
-**Q:** Why the new sword textures? \
-**A:** Because I find them way cooler than the old textures tbf and better look, but I integrated a 16x resourcepack for those who rather use the 16x textures.
 
 ## 📜 License
 
