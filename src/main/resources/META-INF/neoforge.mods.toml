@@ -12,13 +12,12 @@ displayName="${mod_name}"
 
 displayURL="https://github.com/Starexify/BigSwordsRxCosmicore"
 issueTrackerURL="https://github.com/Starexify/BigSwordsRxCosmicore/issues"
-logoFile="big_swords_r_logo.png"
+logoFile="bsrxcc_logo.png"
 #credits=""
 authors="${mod_authors}"
 description='''${mod_description}'''
 
 [modproperties.modmenu]
-links=["big_swords_r.modrinth=modrinth.com/mod/big-swords-r", "big_swords_r.curseforge=www.curseforge.com/minecraft/mc-mods/big-swords-r", "big_swords_r.wiki=https://github.com/Starexify/BigSwordsR/wiki"]
 sources="https://github.com/Starexify/BigSwordsRxCosmicore"
 
 # The [[accessTransformers]] block allows you to declare where your AT file is.

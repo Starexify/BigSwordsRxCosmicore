@@ -1,4 +1,4 @@
-![Big Swords R Logo](https://github.com/Starexify/BigSwordsR/blob/main/src/main/resources/big_swords_r_logo.png?raw=true)
+![Big Swords R x Cosmicore Logo](https://github.com/Starexify/BigSwordsRxCosmicore/blob/1.21-neo/src/main/resources/bsrxcc.png?raw=true)
 
 <p align="center">
   <a href="https://www.curseforge.com/minecraft/mc-mods/big-swords-r"><img alt="curseforge" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_vector.svg"></a>
@@ -11,9 +11,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Starexify/BigSwordsR/wiki"><img alt="Documentation" src="https://img.shields.io/badge/mod%20documentation%20(Wiki)-1?style=for-the-badge&logo=readdotcv&color=96000C"></a> 
-  <a href="https://github.com/Starexify/BigSwordsR/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/Starexify/BigSwordsR?style=for-the-badge&color=96000C"></a>
-  <a href="https://github.com/Starexify/BigSwordsR/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/Starexify/BigSwordsR?style=for-the-badge&color=96000C"></a>
+  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/wiki"><img alt="Documentation" src="https://img.shields.io/badge/mod%20documentation%20(Wiki)-1?style=for-the-badge&logo=readdotcv&color=96000C"></a> 
+  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/Starexify/BigSwordsR?style=for-the-badge&color=96000C"></a>
+  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/Starexify/BigSwordsR?style=for-the-badge&color=96000C"></a>
 </p>
 
 
