@@ -1,5 +1,7 @@
 package net.nova.big_swords_addon.event;
 
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -21,12 +23,14 @@ import net.nova.big_swords_addon.init.BCItems;
 
 import java.util.List;
 import java.util.Random;
+import java.util.UUID;
 
 import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
 
 @EventBusSubscriber(modid = MODID)
 public class ShieldMechanics {
     public static final ResourceLocation MOVEMENT_SPEED_ID = ResourceLocation.withDefaultNamespace("movement_speed");
+    private static int consecutiveBlockCount = 0;
 
     @SubscribeEvent
     public static void onShieldBlock(LivingShieldBlockEvent event) {
@@ -34,26 +38,30 @@ public class ShieldMechanics {
             ItemStack shield = player.getUseItem();
             Entity attacker = event.getDamageSource().getEntity();
             DamageSource damageSource = event.getDamageSource();
-            Level level = player.level();
-            Entity sourceEntity = event.getDamageSource().getDirectEntity();
-            float blockedDamage = event.getBlockedDamage();
-            float shieldDamage = event.shieldDamage();
-            double randomChance = Math.random();
-            Random random = new Random();
+
 
             // Lonsdaleite Shields
             boolean isLonsdaleiteShield = shield.is(BCItems.LONSDALEITE_SHIELD);
             boolean isGildedLonsdaleiteShield = shield.is(BCItems.GILDED_LONSDALEITE_SHIELD);
             if ((isLonsdaleiteShield || isGildedLonsdaleiteShield)) {
+                // Perk
                 if (attacker instanceof LivingEntity && (damageSource.is(DamageTypes.PLAYER_ATTACK) || damageSource.is(DamageTypes.MOB_ATTACK))) {
                     event.setShieldDamage(0);
-
-                    // Prevent axes from putting the shield on cooldown
                     if (attacker instanceof LivingEntity living) {
                         ItemStack weapon = living.getMainHandItem();
                         if (weapon.getItem() instanceof AxeItem) {
-                            event.setCanceled(true);
+                            player.getCooldowns().removeCooldown(shield.getItem());
                         }
+                    }
+
+                    // Weakness
+                    consecutiveBlockCount++;
+                    int stunThreshold = isGildedLonsdaleiteShield ? 10 : 5;
+                    if (consecutiveBlockCount >= stunThreshold) {
+                        player.setNoActionTime(400);
+                        player.setDeltaMovement(0, player.getDeltaMovement().y, 0);
+                        player.displayClientMessage(Component.literal("You are stunned!").withStyle(ChatFormatting.RED), true);
+                        consecutiveBlockCount = 0;
                     }
                 }
             }
