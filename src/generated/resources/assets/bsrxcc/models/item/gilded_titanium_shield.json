@@ -1,0 +1,14 @@
+{
+  "parent": "big_swords:item/template_shield",
+  "overrides": [
+    {
+      "model": "bsrxcc:item/gilded_titanium_shield_blocking",
+      "predicate": {
+        "minecraft:blocking": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "bsrxcc:item/gilded_titanium_shield"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bsrxcc:titanium_big_sword_from_smelting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_titanium_big_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bsrxcc:titanium_big_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_titanium_big_sword"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bsrxcc:titanium_big_sword_from_smelting"
+    ]
+  }
+}

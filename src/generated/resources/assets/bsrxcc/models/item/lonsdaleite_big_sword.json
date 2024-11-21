@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "bsrxcc:item/lonsdaleite_big_sword"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "bsrxcc:gilded_lonsdaleite_shield.perk": "Special Perk: Kinetic Wave",
+  "bsrxcc:gilded_lonsdaleite_shield.weakness": "Weakness: Enchantment Singularity",
+  "bsrxcc:gilded_titanium_shield.perk": "Special Perk: Titanic Slam",
+  "bsrxcc:gilded_titanium_shield.weakness": "Weakness: Heavy",
+  "bsrxcc:lonsdaleite_shield.perk": "Special Perk: Kinetic Wave",
+  "bsrxcc:lonsdaleite_shield.weakness": "Weakness: Enchantment Singularity",
+  "bsrxcc:titanium_shield.perk": "Special Perk: Titanic Slam",
+  "bsrxcc:titanium_shield.weakness": "Weakness: Heavy",
+  "item.bsrxcc.gilded_lonsdaleite_shield": "Gilded Lonsdaleite Shield",
+  "item.bsrxcc.gilded_titanium_shield": "Gilded Titanium Shield",
+  "item.bsrxcc.lonsdaleite_big_sword": "Lonsdaleite Big Sword",
+  "item.bsrxcc.lonsdaleite_glaive": "Lonsdaleite Glaive",
+  "item.bsrxcc.lonsdaleite_scythe": "Lonsdaleite Scythe",
+  "item.bsrxcc.lonsdaleite_shield": "Lonsdaleite Shield",
+  "item.bsrxcc.titanium_big_sword": "Titanium Big Sword",
+  "item.bsrxcc.titanium_glaive": "Titanium Glaive",
+  "item.bsrxcc.titanium_scythe": "Titanium Scythe",
+  "item.bsrxcc.titanium_shield": "Titanium Shield"
+}
