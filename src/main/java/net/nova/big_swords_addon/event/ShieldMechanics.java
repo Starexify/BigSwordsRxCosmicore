@@ -9,7 +9,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -21,7 +20,7 @@ import net.nova.big_swords_addon.init.BCItems;
 
 import java.util.List;
 
-import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
+import static net.nova.big_swords_addon.BSRxCC.MODID;
 
 @EventBusSubscriber(modid = MODID)
 public class ShieldMechanics {

@@ -7,14 +7,14 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import net.nova.big_swords_addon.BigSwordsRAddon;
+import net.nova.big_swords_addon.BSRxCC;
 import net.nova.big_swords_addon.data.recipe.BCRecipeProvider;
 import net.nova.big_swords_addon.data.tags.BCBlockTagsProvider;
 import net.nova.big_swords_addon.data.tags.BCItemTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
+import static net.nova.big_swords_addon.BSRxCC.MODID;
 
 @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
@@ -35,7 +35,7 @@ public class DataGenerators {
             generator.addProvider(true, new BCItemTagsProvider(output, lookupProvider, modBlockTagsProvider, existingFileHelper));
 
         } catch (RuntimeException e) {
-            BigSwordsRAddon.logger.error("Big Swords R x Cosmicore Add-On failed to gather data", e);
+            BSRxCC.logger.error("Big Swords R x Cosmicore Add-On failed to gather data", e);
         }
     }
 }

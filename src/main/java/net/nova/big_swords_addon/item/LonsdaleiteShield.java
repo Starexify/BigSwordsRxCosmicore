@@ -1,14 +1,10 @@
-package net.nova.big_swords_addon;
+package net.nova.big_swords_addon.item;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.nova.big_swords.item.TieredShield;
-
-import java.util.Map;
 
 public class LonsdaleiteShield extends TieredShield {
     public LonsdaleiteShield(Tier pTier, Properties pProperties, int durabilityMultiplier, int additionalDurability) {

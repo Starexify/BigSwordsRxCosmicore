@@ -7,7 +7,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
+import static net.nova.big_swords_addon.BSRxCC.MODID;
 
 public class BCBlockTagsProvider extends BlockTagsProvider {
     public BCBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, ExistingFileHelper existingFileHelper) {

@@ -9,7 +9,7 @@ import net.nova.big_swords_addon.init.BCItems;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
+import static net.nova.big_swords_addon.BSRxCC.MODID;
 
 public class BCItemTagsProvider extends ItemTagsProvider {
     public BCItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, BCBlockTagsProvider provider, ExistingFileHelper existingFileHelper) {

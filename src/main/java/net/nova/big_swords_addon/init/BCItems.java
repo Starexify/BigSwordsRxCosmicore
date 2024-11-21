@@ -7,10 +7,10 @@ import net.nova.big_swords.item.BigSwordItem;
 import net.nova.big_swords.item.GlaiveItem;
 import net.nova.big_swords.item.ScytheItem;
 import net.nova.big_swords.item.TieredShield;
-import net.nova.big_swords_addon.LonsdaleiteShield;
+import net.nova.big_swords_addon.item.LonsdaleiteShield;
 import net.nova.cosmicore.init.CTiers;
 
-import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
+import static net.nova.big_swords_addon.BSRxCC.MODID;
 
 public class BCItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);

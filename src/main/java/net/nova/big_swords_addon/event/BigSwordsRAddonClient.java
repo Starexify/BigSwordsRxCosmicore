@@ -15,7 +15,7 @@ import net.nova.big_swords_addon.init.BCItems;
 
 import java.util.function.Supplier;
 
-import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
+import static net.nova.big_swords_addon.BSRxCC.MODID;
 
 @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class BigSwordsRAddonClient {

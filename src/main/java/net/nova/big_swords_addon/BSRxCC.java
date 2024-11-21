@@ -8,14 +8,14 @@ import net.nova.big_swords_addon.init.BCItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
+import static net.nova.big_swords_addon.BSRxCC.MODID;
 
 @Mod(MODID)
-public class BigSwordsRAddon {
-    public static final String MODID = "big_swords_addon";
-    public static final Logger logger = LoggerFactory.getLogger(BigSwordsRAddon.class);
+public class BSRxCC {
+    public static final String MODID = "bsrxcc";
+    public static final Logger logger = LoggerFactory.getLogger(BSRxCC.class);
 
-    public BigSwordsRAddon(IEventBus bus) {
+    public BSRxCC(IEventBus bus) {
         BCItems.ITEMS.register(bus);
 
         bus.addListener(DataGenerators::gatherData);
