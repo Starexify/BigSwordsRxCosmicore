@@ -11,8 +11,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/Starexify/BigSwordsR?style=for-the-badge&color=96000C"></a>
-  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/Starexify/BigSwordsR?style=for-the-badge&color=96000C"></a>
+  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/Starexify/BigSwordsRxCosmicore?style=for-the-badge&color=96000C"></a>
+  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/Starexify/BigSwordsRxCosmicore?style=for-the-badge&color=96000C"></a>
 </p>
 
 
@@ -44,7 +44,7 @@ Big Swords R x Cosmicore Add-On is a compatibility mod which adds the big swords
 
 ## ✨ Features
 
-### **This mod adds:**
+### **This add-on adds:**
 - ⚔️️ **2 New Big Swords**
 - ⚔️️ **2 New Glaives**
 - ⚔️️ **2 New Scythes**
