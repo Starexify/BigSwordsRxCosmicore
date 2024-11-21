@@ -49,7 +49,7 @@ Big Swords R x Cosmicore Add-On is a compatibility mod which adds the big swords
 - ⚔️️ **2 New Big Swords**
 - ⚔️️ **2 New Glaives**
 - ⚔️️ **2 New Scythes**
-- 🛡️ **4 New Shields**
+- 🛡️ **4 New Shields with new Perks and Weaknesses**
 
 
 ## 📜 License
