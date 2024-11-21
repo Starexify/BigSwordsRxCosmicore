@@ -1,9 +1,9 @@
-package net.nova.big_swords_addon.client.render.item;
+package net.nova.bsrxcc.client.render.item;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.nova.big_swords.client.renderer.item.BSItemProperties;
-import net.nova.big_swords_addon.init.BCItems;
+import net.nova.bsrxcc.init.BCItems;
 
 @OnlyIn(Dist.CLIENT)
 public class BCItemProperties extends BSItemProperties {

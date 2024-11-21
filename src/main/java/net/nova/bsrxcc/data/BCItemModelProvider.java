@@ -1,4 +1,4 @@
-package net.nova.big_swords_addon.data;
+package net.nova.bsrxcc.data;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -8,9 +8,9 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.nova.big_swords.BigSwordsR;
 import net.nova.big_swords.client.renderer.item.BSItemProperties;
-import net.nova.big_swords_addon.init.BCItems;
+import net.nova.bsrxcc.init.BCItems;
 
-import static net.nova.big_swords_addon.BSRxCC.MODID;
+import static net.nova.bsrxcc.BSRxCC.MODID;
 
 public class BCItemModelProvider extends ItemModelProvider {
     public BCItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {

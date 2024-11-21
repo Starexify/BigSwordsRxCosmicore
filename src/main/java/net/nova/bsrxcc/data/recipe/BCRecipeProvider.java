@@ -1,4 +1,4 @@
-package net.nova.big_swords_addon.data.recipe;
+package net.nova.bsrxcc.data.recipe;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -7,7 +7,7 @@ import net.nova.big_swords.data.recipe.BSRecipeProvider;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.nova.big_swords_addon.BSRxCC.MODID;
+import static net.nova.bsrxcc.BSRxCC.MODID;
 
 public class BCRecipeProvider extends BSRecipeProvider {
     public final PackOutput output;

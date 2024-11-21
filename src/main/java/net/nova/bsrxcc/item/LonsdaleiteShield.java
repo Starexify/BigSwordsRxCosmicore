@@ -1,4 +1,4 @@
-package net.nova.big_swords_addon.item;
+package net.nova.bsrxcc.item;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.ItemStack;

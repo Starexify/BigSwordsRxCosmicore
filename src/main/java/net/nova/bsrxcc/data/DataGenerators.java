@@ -1,4 +1,4 @@
-package net.nova.big_swords_addon.data;
+package net.nova.bsrxcc.data;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -7,14 +7,14 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import net.nova.big_swords_addon.BSRxCC;
-import net.nova.big_swords_addon.data.recipe.BCRecipeProvider;
-import net.nova.big_swords_addon.data.tags.BCBlockTagsProvider;
-import net.nova.big_swords_addon.data.tags.BCItemTagsProvider;
+import net.nova.bsrxcc.BSRxCC;
+import net.nova.bsrxcc.data.recipe.BCRecipeProvider;
+import net.nova.bsrxcc.data.tags.BCBlockTagsProvider;
+import net.nova.bsrxcc.data.tags.BCItemTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.nova.big_swords_addon.BSRxCC.MODID;
+import static net.nova.bsrxcc.BSRxCC.MODID;
 
 @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {

@@ -1,13 +1,13 @@
-package net.nova.big_swords_addon.data;
+package net.nova.bsrxcc.data;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.common.data.LanguageProvider;
-import net.nova.big_swords_addon.init.BCItems;
+import net.nova.bsrxcc.init.BCItems;
 
 import java.util.function.Supplier;
 
-import static net.nova.big_swords_addon.BSRxCC.MODID;
+import static net.nova.bsrxcc.BSRxCC.MODID;
 
 public class LangProvider extends LanguageProvider {
     public LangProvider(PackOutput output) {

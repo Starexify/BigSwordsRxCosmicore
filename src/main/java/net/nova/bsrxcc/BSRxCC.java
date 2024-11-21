@@ -1,14 +1,14 @@
-package net.nova.big_swords_addon;
+package net.nova.bsrxcc;
 
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
-import net.nova.big_swords_addon.data.DataGenerators;
-import net.nova.big_swords_addon.init.BCItems;
+import net.nova.bsrxcc.data.DataGenerators;
+import net.nova.bsrxcc.init.BCItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static net.nova.big_swords_addon.BSRxCC.MODID;
+import static net.nova.bsrxcc.BSRxCC.MODID;
 
 @Mod(MODID)
 public class BSRxCC {

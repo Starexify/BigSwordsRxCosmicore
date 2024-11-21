@@ -1,4 +1,4 @@
-package net.nova.big_swords_addon.event;
+package net.nova.bsrxcc.event;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.damagesource.DamageSource;
@@ -16,11 +16,11 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.LivingFallEvent;
 import net.neoforged.neoforge.event.entity.living.LivingShieldBlockEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import net.nova.big_swords_addon.init.BCItems;
+import net.nova.bsrxcc.init.BCItems;
 
 import java.util.List;
 
-import static net.nova.big_swords_addon.BSRxCC.MODID;
+import static net.nova.bsrxcc.BSRxCC.MODID;
 
 @EventBusSubscriber(modid = MODID)
 public class ShieldMechanics {

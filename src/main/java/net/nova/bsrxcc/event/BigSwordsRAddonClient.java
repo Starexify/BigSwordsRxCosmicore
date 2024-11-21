@@ -1,4 +1,4 @@
-package net.nova.big_swords_addon.event;
+package net.nova.bsrxcc.event;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -10,12 +10,12 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.nova.big_swords.init.BSItems;
 import net.nova.big_swords.init.CreativeTab;
-import net.nova.big_swords_addon.client.render.item.BCItemProperties;
-import net.nova.big_swords_addon.init.BCItems;
+import net.nova.bsrxcc.client.render.item.BCItemProperties;
+import net.nova.bsrxcc.init.BCItems;
 
 import java.util.function.Supplier;
 
-import static net.nova.big_swords_addon.BSRxCC.MODID;
+import static net.nova.bsrxcc.BSRxCC.MODID;
 
 @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class BigSwordsRAddonClient {

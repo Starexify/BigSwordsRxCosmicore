@@ -1,11 +1,11 @@
-package net.nova.big_swords_addon.data.recipe;
+package net.nova.bsrxcc.data.recipe;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.nova.big_swords.init.BSItems;
-import net.nova.big_swords_addon.init.BCItems;
+import net.nova.bsrxcc.init.BCItems;
 import net.nova.cosmicore.data.recipe.CRecipeProvider;
 
 import java.util.concurrent.CompletableFuture;

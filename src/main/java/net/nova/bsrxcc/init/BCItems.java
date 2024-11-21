@@ -1,4 +1,4 @@
-package net.nova.big_swords_addon.init;
+package net.nova.bsrxcc.init;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -7,10 +7,10 @@ import net.nova.big_swords.item.BigSwordItem;
 import net.nova.big_swords.item.GlaiveItem;
 import net.nova.big_swords.item.ScytheItem;
 import net.nova.big_swords.item.TieredShield;
-import net.nova.big_swords_addon.item.LonsdaleiteShield;
+import net.nova.bsrxcc.item.LonsdaleiteShield;
 import net.nova.cosmicore.init.CTiers;
 
-import static net.nova.big_swords_addon.BSRxCC.MODID;
+import static net.nova.bsrxcc.BSRxCC.MODID;
 
 public class BCItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
