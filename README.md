@@ -1,6 +1,11 @@
 ![Big Swords R x Cosmicore Logo](https://github.com/Starexify/BigSwordsRxCosmicore/blob/1.21-neo/src/main/resources/bsrxcc_logo.png?raw=true)
 
 <p align="center">
+  <a href="https://github.com/Starexify/BigSwordsR"><img alt="badge name" src="https://raw.githubusercontent.com/Starexify/Starexify/f1d90441667433dd320547d635543e1773e8263e/resources/Minecraft/Desc/requires/big-swords-r/cozy_vector.svg"></a>
+  <a href="https://github.com/Starexify/Cosmicore"><img alt="badge name" src="https://raw.githubusercontent.com/Starexify/Starexify/f1d90441667433dd320547d635543e1773e8263e/resources/Minecraft/Desc/requires/cosmicore/cozy_vector.svg"></a>
+</p>
+
+<p align="center">
   <a href="https://www.curseforge.com/minecraft/mc-mods/bsrxcc"><img alt="curseforge" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_vector.svg"></a>
   <a href="https://modrinth.com/mod/bsrxcc"><img alt="modrinth" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg"></a>
 </p>
