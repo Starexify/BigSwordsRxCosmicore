@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/Starexify/BigSwordsR"><img alt="badge name" src="https://raw.githubusercontent.com/Starexify/Starexify/f1d90441667433dd320547d635543e1773e8263e/resources/Minecraft/Desc/requires/big-swords-r/cozy_vector.svg"></a>
-  <a href="https://github.com/Starexify/Cosmicore"><img alt="badge name" src="https://raw.githubusercontent.com/Starexify/Starexify/f1d90441667433dd320547d635543e1773e8263e/resources/Minecraft/Desc/requires/cosmicore/cozy_vector.svg"></a>
+  <a href="https://github.com/Starexify/Cosmicore"><img alt="badge name" src="https://raw.githubusercontent.com/Starexify/Starexify/0bb9516ee8fa35f306d61dafe973f10d97f320aa/resources/Minecraft/Desc/requires/cosmicore/cozy_vector.svg"></a>
 </p>
 
 <p align="center">
