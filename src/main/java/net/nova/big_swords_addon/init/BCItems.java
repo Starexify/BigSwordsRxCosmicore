@@ -7,6 +7,7 @@ import net.nova.big_swords.item.BigSwordItem;
 import net.nova.big_swords.item.GlaiveItem;
 import net.nova.big_swords.item.ScytheItem;
 import net.nova.big_swords.item.TieredShield;
+import net.nova.big_swords_addon.LonsdaleiteShield;
 import net.nova.cosmicore.init.CTiers;
 
 import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
@@ -29,6 +30,6 @@ public class BCItems {
     // Shields
     public static DeferredItem<Item> TITANIUM_SHIELD = ITEMS.register("titanium_shield", () -> new TieredShield(CTiers.TITANIUM, new Item.Properties()));
     public static DeferredItem<Item> GILDED_TITANIUM_SHIELD = ITEMS.register("gilded_titanium_shield", () -> new TieredShield(CTiers.TITANIUM, new Item.Properties(), 1, CTiers.TITANIUM.getUses() / 2));
-    public static DeferredItem<Item> LONSDALEITE_SHIELD = ITEMS.register("lonsdaleite_shield", () -> new TieredShield(CTiers.LONSDALEITE, new Item.Properties(), 1, -(CTiers.LONSDALEITE.getUses() / 2)));
-    public static DeferredItem<Item> GILDED_LONSDALEITE_SHIELD = ITEMS.register("gilded_lonsdaleite_shield", () -> new TieredShield(CTiers.LONSDALEITE, new Item.Properties(), 1, -938));
+    public static DeferredItem<Item> LONSDALEITE_SHIELD = ITEMS.register("lonsdaleite_shield", () -> new LonsdaleiteShield(CTiers.LONSDALEITE, new Item.Properties(), 1, -(CTiers.LONSDALEITE.getUses() / 2)));
+    public static DeferredItem<Item> GILDED_LONSDALEITE_SHIELD = ITEMS.register("gilded_lonsdaleite_shield", () -> new LonsdaleiteShield(CTiers.LONSDALEITE, new Item.Properties(), 1, -938));
 }

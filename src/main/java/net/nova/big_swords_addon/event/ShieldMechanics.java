@@ -1,7 +1,5 @@
 package net.nova.big_swords_addon.event;
 
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -22,15 +20,12 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.nova.big_swords_addon.init.BCItems;
 
 import java.util.List;
-import java.util.Random;
-import java.util.UUID;
 
 import static net.nova.big_swords_addon.BigSwordsRAddon.MODID;
 
 @EventBusSubscriber(modid = MODID)
 public class ShieldMechanics {
     public static final ResourceLocation MOVEMENT_SPEED_ID = ResourceLocation.withDefaultNamespace("movement_speed");
-    private static int consecutiveBlockCount = 0;
 
     @SubscribeEvent
     public static void onShieldBlock(LivingShieldBlockEvent event) {
@@ -39,29 +34,32 @@ public class ShieldMechanics {
             Entity attacker = event.getDamageSource().getEntity();
             DamageSource damageSource = event.getDamageSource();
 
-
             // Lonsdaleite Shields
             boolean isLonsdaleiteShield = shield.is(BCItems.LONSDALEITE_SHIELD);
             boolean isGildedLonsdaleiteShield = shield.is(BCItems.GILDED_LONSDALEITE_SHIELD);
             if ((isLonsdaleiteShield || isGildedLonsdaleiteShield)) {
-                // Perk
                 if (attacker instanceof LivingEntity && (damageSource.is(DamageTypes.PLAYER_ATTACK) || damageSource.is(DamageTypes.MOB_ATTACK))) {
-                    event.setShieldDamage(0);
-                    if (attacker instanceof LivingEntity living) {
-                        ItemStack weapon = living.getMainHandItem();
-                        if (weapon.getItem() instanceof AxeItem) {
-                            player.getCooldowns().removeCooldown(shield.getItem());
-                        }
-                    }
+                    // Perk
+                    double shockwaveChance = isGildedLonsdaleiteShield ? 0.5 : 0.3;
+                    if (player.level().random.nextDouble() < shockwaveChance) {
+                        List<LivingEntity> nearbyEntities = player.level().getEntitiesOfClass(
+                                LivingEntity.class,
+                                player.getBoundingBox().inflate(5.0),
+                                entity -> entity != player && entity != attacker
+                        );
 
-                    // Weakness
-                    consecutiveBlockCount++;
-                    int stunThreshold = isGildedLonsdaleiteShield ? 10 : 5;
-                    if (consecutiveBlockCount >= stunThreshold) {
-                        player.setNoActionTime(400);
-                        player.setDeltaMovement(0, player.getDeltaMovement().y, 0);
-                        player.displayClientMessage(Component.literal("You are stunned!").withStyle(ChatFormatting.RED), true);
-                        consecutiveBlockCount = 0;
+                        for (LivingEntity nearbyEntity : nearbyEntities) {
+                            double dx = nearbyEntity.getX() - player.getX();
+                            double dz = nearbyEntity.getZ() - player.getZ();
+                            double distance = Math.sqrt(dx * dx + dz * dz);
+                            double pushFactor = Math.max(0, 3.0 - distance);
+
+                            nearbyEntity.push(
+                                    dx / distance * pushFactor,
+                                    0.4,
+                                    dz / distance * pushFactor
+                            );
+                        }
                     }
                 }
             }
