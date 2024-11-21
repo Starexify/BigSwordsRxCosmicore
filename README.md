@@ -11,7 +11,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/wiki"><img alt="Documentation" src="https://img.shields.io/badge/mod%20documentation%20(Wiki)-1?style=for-the-badge&logo=readdotcv&color=96000C"></a> 
   <a href="https://github.com/Starexify/BigSwordsRxCosmicore/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/Starexify/BigSwordsR?style=for-the-badge&color=96000C"></a>
   <a href="https://github.com/Starexify/BigSwordsRxCosmicore/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/Starexify/BigSwordsR?style=for-the-badge&color=96000C"></a>
 </p>
