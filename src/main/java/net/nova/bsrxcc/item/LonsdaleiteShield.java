@@ -2,13 +2,13 @@ package net.nova.bsrxcc.item;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.nova.big_swords.item.TieredShield;
 
 public class LonsdaleiteShield extends TieredShield {
-    public LonsdaleiteShield(Tier pTier, Properties pProperties, int durabilityMultiplier, int additionalDurability) {
-        super(pTier, pProperties, durabilityMultiplier, additionalDurability);
+    public LonsdaleiteShield(ToolMaterial toolMaterial, Properties properties, int durabilityMultiplier, int additionalDurability) {
+        super(toolMaterial, properties, durabilityMultiplier, additionalDurability);
     }
 
     @Override
@@ -17,11 +17,5 @@ public class LonsdaleiteShield extends TieredShield {
         ItemEnchantments bookEnchantments = book.getOrDefault(DataComponents.STORED_ENCHANTMENTS, ItemEnchantments.EMPTY);
 
         return stackEnchantments.isEmpty() && bookEnchantments.entrySet().size() == 1;
-    }
-
-    @Override
-    public boolean isEnchantable(ItemStack stack) {
-        ItemEnchantments stackEnchantments = stack.getOrDefault(DataComponents.ENCHANTMENTS, ItemEnchantments.EMPTY);
-        return stackEnchantments.isEmpty();
     }
 }

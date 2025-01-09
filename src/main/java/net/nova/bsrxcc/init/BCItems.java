@@ -8,7 +8,7 @@ import net.nova.big_swords.item.GlaiveItem;
 import net.nova.big_swords.item.ScytheItem;
 import net.nova.big_swords.item.TieredShield;
 import net.nova.bsrxcc.item.LonsdaleiteShield;
-import net.nova.cosmicore.init.CTiers;
+import net.nova.cosmicore.init.CToolMaterial;
 
 import static net.nova.bsrxcc.BSRxCC.MODID;
 
@@ -16,20 +16,20 @@ public class BCItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
 
     // Big Swords
-    public static DeferredItem<Item> TITANIUM_BIG_SWORD = ITEMS.register("titanium_big_sword", () -> new BigSwordItem(CTiers.TITANIUM, new Item.Properties().attributes(BigSwordItem.createAttributes(CTiers.TITANIUM, 6.5F, -2.8F))));
-    public static DeferredItem<Item> LONSDALEITE_BIG_SWORD = ITEMS.register("lonsdaleite_big_sword", () -> new BigSwordItem(CTiers.LONSDALEITE, new Item.Properties().attributes(BigSwordItem.createAttributes(CTiers.LONSDALEITE, 6.5F, -2.8F))));
+    public static DeferredItem<Item> TITANIUM_BIG_SWORD = ITEMS.registerItem("titanium_big_sword", properties -> new BigSwordItem(CToolMaterial.TITANIUM, 6.5F, -2.8F, properties));
+    public static DeferredItem<Item> LONSDALEITE_BIG_SWORD = ITEMS.registerItem("lonsdaleite_big_sword", properties -> new BigSwordItem(CToolMaterial.LONSDALEITE, 6.5F, -2.8F, properties));
 
     // Glaives
-    public static DeferredItem<Item> TITANIUM_GLAIVE = ITEMS.register("titanium_glaive", () -> new GlaiveItem(CTiers.TITANIUM, new Item.Properties().attributes(GlaiveItem.createAttributes(CTiers.TITANIUM, 2, -2.2F)), 4.4F, 5.4F));
-    public static DeferredItem<Item> LONSDALEITE_GLAIVE = ITEMS.register("lonsdaleite_glaive", () -> new GlaiveItem(CTiers.LONSDALEITE, new Item.Properties().attributes(GlaiveItem.createAttributes(CTiers.LONSDALEITE, 2, -2.2F)), 6.0F, 7.0F));
+    public static DeferredItem<Item> TITANIUM_GLAIVE = ITEMS.registerItem("titanium_glaive", properties -> new GlaiveItem(CToolMaterial.TITANIUM, 2, -2.2F, 4.4F, 5.4F, properties));
+    public static DeferredItem<Item> LONSDALEITE_GLAIVE = ITEMS.registerItem("lonsdaleite_glaive", properties -> new GlaiveItem(CToolMaterial.LONSDALEITE, 2, -2.2F, 6.0F, 7.0F, properties));
 
     // Scythes
-    public static DeferredItem<Item> TITANIUM_SCYTHE = ITEMS.register("titanium_scythe", () -> new ScytheItem(CTiers.TITANIUM, new Item.Properties().attributes(ScytheItem.createAttributes(CTiers.TITANIUM, 1, -2.0F)), 3.4F, 4.4F));
-    public static DeferredItem<Item> LONSDALEITE_SCYTHE = ITEMS.register("lonsdaleite_scythe", () -> new ScytheItem(CTiers.LONSDALEITE, new Item.Properties().attributes(ScytheItem.createAttributes(CTiers.LONSDALEITE, 1, -2.0F)), 5.0F, 6.0F));
+    public static DeferredItem<Item> TITANIUM_SCYTHE = ITEMS.registerItem("titanium_scythe", properties -> new ScytheItem(CToolMaterial.TITANIUM, 1, -2.0F, 3.4F, 4.4F, properties));
+    public static DeferredItem<Item> LONSDALEITE_SCYTHE = ITEMS.registerItem("lonsdaleite_scythe", properties -> new ScytheItem(CToolMaterial.LONSDALEITE, 1, -2.0F, 5.0F, 6.0F, properties));
 
     // Shields
-    public static DeferredItem<Item> TITANIUM_SHIELD = ITEMS.register("titanium_shield", () -> new TieredShield(CTiers.TITANIUM, new Item.Properties()));
-    public static DeferredItem<Item> GILDED_TITANIUM_SHIELD = ITEMS.register("gilded_titanium_shield", () -> new TieredShield(CTiers.TITANIUM, new Item.Properties(), 1, CTiers.TITANIUM.getUses() / 2));
-    public static DeferredItem<Item> LONSDALEITE_SHIELD = ITEMS.register("lonsdaleite_shield", () -> new LonsdaleiteShield(CTiers.LONSDALEITE, new Item.Properties(), 1, -(CTiers.LONSDALEITE.getUses() / 2)));
-    public static DeferredItem<Item> GILDED_LONSDALEITE_SHIELD = ITEMS.register("gilded_lonsdaleite_shield", () -> new LonsdaleiteShield(CTiers.LONSDALEITE, new Item.Properties(), 1, -938));
+    public static DeferredItem<Item> TITANIUM_SHIELD = ITEMS.registerItem("titanium_shield", properties -> new TieredShield(CToolMaterial.TITANIUM, properties));
+    public static DeferredItem<Item> GILDED_TITANIUM_SHIELD = ITEMS.registerItem("gilded_titanium_shield", properties -> new TieredShield(CToolMaterial.TITANIUM, properties, 1, CToolMaterial.TITANIUM.durability() / 2));
+    public static DeferredItem<Item> LONSDALEITE_SHIELD = ITEMS.registerItem("lonsdaleite_shield", properties -> new LonsdaleiteShield(CToolMaterial.LONSDALEITE, properties, 1, -(CToolMaterial.LONSDALEITE.durability() / 2)));
+    public static DeferredItem<Item> GILDED_LONSDALEITE_SHIELD = ITEMS.registerItem("gilded_lonsdaleite_shield", properties -> new LonsdaleiteShield(CToolMaterial.LONSDALEITE, properties, 1, -938));
 }

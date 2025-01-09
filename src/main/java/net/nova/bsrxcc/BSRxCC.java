@@ -17,8 +17,6 @@ public class BSRxCC {
 
     public BSRxCC(IEventBus bus) {
         BCItems.ITEMS.register(bus);
-
-        bus.addListener(DataGenerators::gatherData);
     }
 
     // Util

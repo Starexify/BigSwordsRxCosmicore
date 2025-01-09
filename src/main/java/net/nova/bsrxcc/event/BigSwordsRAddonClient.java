@@ -6,11 +6,9 @@ import net.minecraft.world.level.ItemLike;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.nova.big_swords.init.BSItems;
 import net.nova.big_swords.init.CreativeTab;
-import net.nova.bsrxcc.client.render.item.BCItemProperties;
 import net.nova.bsrxcc.init.BCItems;
 
 import java.util.function.Supplier;
@@ -40,11 +38,5 @@ public class BigSwordsRAddonClient {
 
     public static void putAfter(Item item, Supplier<? extends ItemLike> itemAfter, BuildCreativeModeTabContentsEvent event) {
         event.insertAfter(item.getDefaultInstance(), itemAfter.get().asItem().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-    }
-
-    @SubscribeEvent
-    public static void setupClient(FMLClientSetupEvent event) {
-        // Item Properties
-        event.enqueueWork(BCItemProperties::addCustomItemProperties);
     }
 }

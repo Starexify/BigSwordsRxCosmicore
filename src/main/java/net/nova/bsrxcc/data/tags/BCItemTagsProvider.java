@@ -3,7 +3,6 @@ package net.nova.bsrxcc.data.tags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.nova.big_swords.init.Tags;
 import net.nova.bsrxcc.init.BCItems;
 
@@ -12,8 +11,8 @@ import java.util.concurrent.CompletableFuture;
 import static net.nova.bsrxcc.BSRxCC.MODID;
 
 public class BCItemTagsProvider extends ItemTagsProvider {
-    public BCItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, BCBlockTagsProvider provider, ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, provider.contentsGetter(), MODID, existingFileHelper);
+    public BCItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, BCBlockTagsProvider provider) {
+        super(output, lookupProvider, provider.contentsGetter(), MODID);
     }
 
     @Override
