@@ -84,9 +84,7 @@ public class ShieldMechanics {
                     );
                 }
             } else {
-                if (speedAttribute != null) {
-                    speedAttribute.removeModifier(MOVEMENT_SPEED_ID);
-                }
+                if (speedAttribute != null) speedAttribute.removeModifier(MOVEMENT_SPEED_ID);
             }
         }
     }
@@ -112,9 +110,8 @@ public class ShieldMechanics {
                         entity -> entity != player
                 );
 
-                for (LivingEntity target : nearbyEntities) {
+                for (LivingEntity target : nearbyEntities)
                     target.hurt(level.damageSources().playerAttack(player), totalDamage);
-                }
             }
         }
     }

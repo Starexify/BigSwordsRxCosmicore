@@ -3,6 +3,7 @@ package net.nova.bsrxcc.data.tags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.world.level.block.Block;
 import net.nova.big_swords.init.Tags;
 import net.nova.bsrxcc.init.BCItems;
 
@@ -11,8 +12,8 @@ import java.util.concurrent.CompletableFuture;
 import static net.nova.bsrxcc.BSRxCC.MODID;
 
 public class BCItemTagsProvider extends ItemTagsProvider {
-    public BCItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, BCBlockTagsProvider provider) {
-        super(output, lookupProvider, provider.contentsGetter(), MODID);
+    public BCItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTags) {
+        super(output, lookupProvider, blockTags, MODID);
     }
 
     @Override

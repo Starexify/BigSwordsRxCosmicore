@@ -23,7 +23,7 @@ public class FurnaceRecipes extends BCRecipeProvider {
                         0.1F,
                         200
                 )
-                .unlockedBy("has_" + getItemName(BCItems.TITANIUM_BIG_SWORD), has(BCItems.TITANIUM_BIG_SWORD))
+                .unlockedBy(getHasName(BCItems.TITANIUM_BIG_SWORD), has(BCItems.TITANIUM_BIG_SWORD))
                 .save(output, path + getSmeltingRecipeName(BCItems.TITANIUM_BIG_SWORD));
 
         // Glaives & Scythes
@@ -36,8 +36,8 @@ public class FurnaceRecipes extends BCRecipeProvider {
                         0.1F,
                         200
                 )
-                .unlockedBy("has_" + getItemName(BCItems.TITANIUM_GLAIVE), has(BCItems.TITANIUM_GLAIVE))
-                .unlockedBy("has_" + getItemName(BCItems.TITANIUM_SCYTHE), has(BCItems.TITANIUM_SCYTHE))
+                .unlockedBy(getHasName(BCItems.TITANIUM_GLAIVE), has(BCItems.TITANIUM_GLAIVE))
+                .unlockedBy(getHasName(BCItems.TITANIUM_SCYTHE), has(BCItems.TITANIUM_SCYTHE))
                 .save(output, path + getSmeltingRecipeName(CItems.TITANIUM_NUGGET));
     }
 }
