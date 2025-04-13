@@ -1,6 +1,10 @@
 package net.nova.bsrxcc.init;
 
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.BlocksAttacks;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nova.big_swords.item.GlaiveItem;
@@ -8,6 +12,9 @@ import net.nova.big_swords.item.ScytheItem;
 import net.nova.big_swords.item.TieredShield;
 import net.nova.bsrxcc.item.LonsdaleiteShield;
 import net.nova.cosmicore.init.CToolMaterial;
+
+import java.util.List;
+import java.util.Optional;
 
 import static net.nova.bsrxcc.BSRxCC.MODID;
 
@@ -27,8 +34,36 @@ public class BCItems {
     public static DeferredItem<Item> LONSDALEITE_SCYTHE = ITEMS.registerItem("lonsdaleite_scythe", properties -> new ScytheItem(CToolMaterial.LONSDALEITE, 1, -2.0F, 5.0F, 6.0F, properties));
 
     // Shields
-    public static DeferredItem<Item> TITANIUM_SHIELD = ITEMS.registerItem("titanium_shield", properties -> new TieredShield(CToolMaterial.TITANIUM, properties));
-    public static DeferredItem<Item> GILDED_TITANIUM_SHIELD = ITEMS.registerItem("gilded_titanium_shield", properties -> new TieredShield(CToolMaterial.TITANIUM, properties, 1, CToolMaterial.TITANIUM.durability() / 2));
-    public static DeferredItem<Item> LONSDALEITE_SHIELD = ITEMS.registerItem("lonsdaleite_shield", properties -> new LonsdaleiteShield(CToolMaterial.LONSDALEITE, properties, 1, -(CToolMaterial.LONSDALEITE.durability() / 2)));
-    public static DeferredItem<Item> GILDED_LONSDALEITE_SHIELD = ITEMS.registerItem("gilded_lonsdaleite_shield", properties -> new LonsdaleiteShield(CToolMaterial.LONSDALEITE, properties, 1, -938));
+    public static DeferredItem<Item> TITANIUM_SHIELD = ITEMS.registerItem("titanium_shield", properties -> new TieredShield(CToolMaterial.TITANIUM,
+            properties.component(DataComponents.BLOCKS_ATTACKS, new BlocksAttacks(0.25F, 1.0F,
+                    List.of(new BlocksAttacks.DamageReduction(90.0F, Optional.empty(), 0.0F, 1.0F)),
+                    new BlocksAttacks.ItemDamageFunction(3.0F, 1.0F, 1.0F),
+                    Optional.of(DamageTypeTags.BYPASSES_SHIELD),
+                    Optional.of(SoundEvents.SHIELD_BLOCK),
+                    Optional.of(SoundEvents.SHIELD_BREAK)
+            ))));
+    public static DeferredItem<Item> GILDED_TITANIUM_SHIELD = ITEMS.registerItem("gilded_titanium_shield", properties -> new TieredShield(CToolMaterial.TITANIUM,
+            properties.component(DataComponents.BLOCKS_ATTACKS, new BlocksAttacks(0.25F, 1.0F,
+                    List.of(new BlocksAttacks.DamageReduction(90.0F, Optional.empty(), 0.0F, 1.0F)),
+                    new BlocksAttacks.ItemDamageFunction(3.0F, 1.0F, 1.0F),
+                    Optional.of(DamageTypeTags.BYPASSES_SHIELD),
+                    Optional.of(SoundEvents.SHIELD_BLOCK),
+                    Optional.of(SoundEvents.SHIELD_BREAK)
+            )), 1, CToolMaterial.TITANIUM.durability() / 2));
+    public static DeferredItem<Item> LONSDALEITE_SHIELD = ITEMS.registerItem("lonsdaleite_shield", properties -> new LonsdaleiteShield(CToolMaterial.LONSDALEITE,
+            properties.component(DataComponents.BLOCKS_ATTACKS, new BlocksAttacks(0.25F, 1.0F,
+                    List.of(new BlocksAttacks.DamageReduction(90.0F, Optional.empty(), 0.0F, 1.0F)),
+                    new BlocksAttacks.ItemDamageFunction(3.0F, 1.0F, 1.0F),
+                    Optional.of(DamageTypeTags.BYPASSES_SHIELD),
+                    Optional.of(SoundEvents.SHIELD_BLOCK),
+                    Optional.of(SoundEvents.SHIELD_BREAK)
+            )), 1, -(CToolMaterial.LONSDALEITE.durability() / 2)));
+    public static DeferredItem<Item> GILDED_LONSDALEITE_SHIELD = ITEMS.registerItem("gilded_lonsdaleite_shield", properties -> new LonsdaleiteShield(CToolMaterial.LONSDALEITE,
+            properties.component(DataComponents.BLOCKS_ATTACKS, new BlocksAttacks(0.25F, 1.0F,
+                    List.of(new BlocksAttacks.DamageReduction(90.0F, Optional.empty(), 0.0F, 1.0F)),
+                    new BlocksAttacks.ItemDamageFunction(3.0F, 1.0F, 1.0F),
+                    Optional.of(DamageTypeTags.BYPASSES_SHIELD),
+                    Optional.of(SoundEvents.SHIELD_BLOCK),
+                    Optional.of(SoundEvents.SHIELD_BREAK)
+            )), 1, -938));
 }
