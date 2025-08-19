@@ -1,42 +1,24 @@
 ![Big Swords R x Cosmicore Logo](https://github.com/Starexify/BigSwordsRxCosmicore/blob/1.21-neo/src/main/resources/bsrxcc_logo.png?raw=true)
 
 <p align="center">
-  <a href="https://www.curseforge.com/minecraft/mc-mods/big-swords-r"><img alt="curseforge" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_vector.svg"></a>
-  <a href="https://modrinth.com/mod/big-swords-rr"><img alt="modrinth" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg"></a>
+  <a href="https://github.com/Starexify/BigSwordsR"><img alt="badge name" src="https://raw.githubusercontent.com/Starexify/Starexify/f1d90441667433dd320547d635543e1773e8263e/resources/Minecraft/Desc/requires/big-swords-r/cozy_vector.svg"></a>
+  <a href="https://github.com/Starexify/Cosmicore"><img alt="badge name" src="https://raw.githubusercontent.com/Starexify/Starexify/0bb9516ee8fa35f306d61dafe973f10d97f320aa/resources/Minecraft/Desc/requires/cosmicore/cozy_vector.svg"></a>
 </p>
 
 <p align="center">
-  <a href="https://www.curseforge.com/minecraft/mc-mods/big-swords-r"><img alt="CurseForge Downloads" src="https://img.shields.io/curseforge/dt/690473?style=for-the-badge&logo=curseforge&color=96000C"></a>
-  <a href="https://modrinth.com/mod/big-swords-rr"><img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/uq8RUJSn?style=for-the-badge&logo=modrinth&color=96000C"></a>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/bsrxcc"><img alt="curseforge" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_vector.svg"></a>
+  <a href="https://modrinth.com/mod/bsrxcc"><img alt="modrinth" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/wiki"><img alt="Documentation" src="https://img.shields.io/badge/mod%20documentation%20(Wiki)-1?style=for-the-badge&logo=readdotcv&color=96000C"></a> 
-  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/Starexify/BigSwordsR?style=for-the-badge&color=96000C"></a>
-  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/Starexify/BigSwordsR?style=for-the-badge&color=96000C"></a>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/bsrxcc"><img alt="CurseForge Downloads" src="https://img.shields.io/curseforge/dt/1144559?style=for-the-badge&logo=curseforge&color=96000C"></a>
+  <a href="https://modrinth.com/mod/bsrxcc"><img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/EIVp5T0t?style=for-the-badge&logo=modrinth&color=96000C"></a>
 </p>
 
-
-<table align="center" style="border-collapse: collapse; margin: 20px auto; width: 80%;">
-  <tr>
-    <td align="center" style="border: none; padding: 10px;">
-      <a href="#%E2%84%B9%EF%B8%8F-about" style="text-decoration: none; color: #00A7E1; font-size: 1.2em; font-weight: bold; transition: color 0.3s ease;">
-        ℹ️ About 
-      </a>
-    </td>
-    <td align="center" style="border: none; padding: 10px;">
-      <a href="#-features" style="text-decoration: none; color: #FF4F58; font-size: 1.2em; font-weight: bold; transition: color 0.3s ease;">
-        ✨ Features
-      </a>
-    </td>
-    <td align="center" style="border: none; padding: 10px;">
-      <a href="#-license" style="text-decoration: none; color: #00CC44; font-size: 1.2em; font-weight: bold; transition: color 0.3s ease;">
-        📜 License
-      </a>
-    </td>
-  </tr>
-</table>
-
+<p align="center">
+  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/Starexify/BigSwordsRxCosmicore?style=for-the-badge&color=96000C"></a>
+  <a href="https://github.com/Starexify/BigSwordsRxCosmicore/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/Starexify/BigSwordsRxCosmicore?style=for-the-badge&color=96000C"></a>
+</p>
 
 ## ℹ️ About
 
@@ -45,7 +27,7 @@ Big Swords R x Cosmicore Add-On is a compatibility mod which adds the big swords
 
 ## ✨ Features
 
-### **This mod adds:**
+### **This add-on adds:**
 - ⚔️️ **2 New Big Swords**
 - ⚔️️ **2 New Glaives**
 - ⚔️️ **2 New Scythes**
